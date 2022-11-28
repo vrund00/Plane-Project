@@ -13,6 +13,11 @@ package application;
 	import javafx.scene.layout.StackPane;
 	import javafx.scene.layout.VBox;
 	import javafx.stage.Stage;
+	import java.sql.Connection;
+	import java.sql.DriverManager;
+	import java.sql.SQLException;
+	import java.sql.ResultSet;
+	import java.sql.Statement;
 
 	public class TestCode extends Application {
 		
@@ -26,6 +31,7 @@ package application;
 
 
 	public static void main(String[] args) {
+		
 		launch(args);
 		
 	}
