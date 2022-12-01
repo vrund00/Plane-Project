@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="New User" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutY="-2.0" prefHeight="378.0" prefWidth="600.0">
+               <left>
+                  <VBox prefHeight="378.0" prefWidth="125.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label prefHeight="28.0" prefWidth="126.0" text="First Name: " />
+                        <Label prefHeight="22.0" prefWidth="126.0" text="Street: " />
+                        <Label prefHeight="26.0" prefWidth="126.0" text="State: " />
+                        <Label prefHeight="26.0" prefWidth="126.0" text="Email: " />
+                        <Label prefHeight="26.0" prefWidth="126.0" text="Username: " />
+                        <Label prefHeight="23.0" prefWidth="126.0" text="Security Question 1: " />
+                        <Label prefHeight="27.0" prefWidth="126.0" text="Answer 1: " />
+                     </children>
+                  </VBox>
+               </left>
+               <center>
+                  <SplitPane dividerPositions="0.5, 0.5" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <VBox prefHeight="377.0" prefWidth="146.0">
+                                 <children>
+                                    <TextField prefHeight="5.0" prefWidth="146.0" />
+                                    <TextField prefHeight="5.0" prefWidth="146.0" />
+                                    <TextField prefHeight="5.0" prefWidth="146.0" />
+                                    <TextField prefHeight="5.0" prefWidth="146.0" />
+                                    <TextField prefHeight="5.0" prefWidth="146.0" />
+                                    <ChoiceBox prefWidth="150.0" />
+                                    <TextField prefHeight="5.0" prefWidth="146.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="377.0" prefWidth="65.0" />
+                        <VBox prefHeight="377.0" prefWidth="146.0">
+                           <children>
+                              <Label prefHeight="25.0" prefWidth="138.0" text="Last Name: " />
+                              <Label prefHeight="25.0" prefWidth="138.0" text="City: " />
+                              <Label prefHeight="24.0" prefWidth="138.0" text="Zipcode: " />
+                              <Label prefHeight="26.0" prefWidth="138.0" text="SSN: " />
+                              <Label prefHeight="26.0" prefWidth="138.0" text="Password: " />
+                              <Label prefHeight="23.0" prefWidth="138.0" text="Security Question 2: " />
+                              <Label prefHeight="28.0" prefWidth="138.0" text="Answer 2: " />
+                           </children>
+                        </VBox>
+                    </items>
+                  </SplitPane>
+               </center>
+               <right>
+                  <VBox prefHeight="378.0" prefWidth="180.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <TextField />
+                        <TextField />
+                        <TextField />
+                        <TextField />
+                        <TextField />
+                        <ChoiceBox prefWidth="150.0" />
+                        <TextField />
+                     </children>
+                  </VBox>
+               </right>
+               <top>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="598.0" text="Customer Information" textAlignment="CENTER" underline="true" BorderPane.alignment="CENTER" />
+               </top>
+               <bottom>
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <buttons>
+                      <Button mnemonicParsing="false" text="Create New User" />
+                        <Button mnemonicParsing="false" text="Cancel" />
+                    </buttons>
+                  </ButtonBar>
+               </bottom>
+            </BorderPane>
+         </children></AnchorPane>
+  </content>
+</TitledPane>
