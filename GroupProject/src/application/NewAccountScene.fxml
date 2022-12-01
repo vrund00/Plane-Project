@@ -26,6 +26,7 @@
                         <Label prefHeight="26.0" prefWidth="126.0" text="Username: " />
                         <Label prefHeight="23.0" prefWidth="126.0" text="Security Question 1: " />
                         <Label prefHeight="27.0" prefWidth="126.0" text="Answer 1: " />
+                        <Label prefHeight="26.0" prefWidth="126.0" text="Admin:" />
                      </children>
                   </VBox>
                </left>
@@ -43,6 +44,7 @@
                                     <TextField prefHeight="5.0" prefWidth="146.0" />
                                     <ChoiceBox prefWidth="150.0" />
                                     <TextField prefHeight="5.0" prefWidth="146.0" />
+                                    <ChoiceBox prefWidth="150.0" />
                                  </children>
                               </VBox>
                            </children>
@@ -57,6 +59,7 @@
                               <Label prefHeight="26.0" prefWidth="138.0" text="Password: " />
                               <Label prefHeight="23.0" prefWidth="138.0" text="Security Question 2: " />
                               <Label prefHeight="28.0" prefWidth="138.0" text="Answer 2: " />
+                              <Label prefHeight="28.0" prefWidth="138.0" text="Admin ID: " />
                            </children>
                         </VBox>
                     </items>
@@ -71,6 +74,7 @@
                         <TextField />
                         <TextField />
                         <ChoiceBox prefWidth="150.0" />
+                        <TextField />
                         <TextField />
                      </children>
                   </VBox>
