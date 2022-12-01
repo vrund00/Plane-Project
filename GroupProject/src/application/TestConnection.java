@@ -9,10 +9,10 @@ import java.sql.Statement;
 public class TestConnection {
 	public static void main(String[]args) throws Exception {
 		
-	creatTable();
+	//creatTable();
 	}
 	
-	public static void creatTable() throws Exception {
+	/*public static void creatTable() throws Exception {
 		try {
 			Connection con;
 			
@@ -23,7 +23,7 @@ public class TestConnection {
 			
 		}catch(Exception e) {System.out.println(e);}
 		finally {System.out.println("Function complete");}
-	}
+	}*/
 	
 	
 	
