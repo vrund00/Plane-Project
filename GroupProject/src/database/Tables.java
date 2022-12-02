@@ -9,7 +9,7 @@ import java.sql.Statement;
 
 public class Tables {
 	public static void main(String[]args) throws Exception {
-		
+		getConnection();
 		
 		}
 	public static Connection getConnection() throws SQLException{
