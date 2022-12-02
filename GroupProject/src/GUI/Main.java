@@ -15,7 +15,9 @@ public class Main extends Application {
 	@Override
 	
 	public void start(Stage primaryStage) throws Exception {
-		Parent root = FXMLLoader.load(getClass().getResource("NewAccountScene"));
+		Parent root = FXMLLoader.load(getClass().getResource("MainFlightScene.fxml"));
+		Scene scene = new Scene(root,400,400);
+		primaryStage.setScene(scene);
 		primaryStage.show();
 	}
 

@@ -6,6 +6,7 @@ module GroupProject {
 	
 	opens application to javafx.graphics, javafx.fxml;
 	
+	exports GUI;
 	
 }
 
