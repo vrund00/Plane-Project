@@ -7,22 +7,26 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="153.0" layoutY="318.0" mnemonicParsing="false" text="Search Flights" />
-      <Button layoutX="41.0" layoutY="37.0" mnemonicParsing="false" text="Logout" />
-      <Label layoutX="248.0" layoutY="36.0" text="My Flights">
+      <Button fx:id="button_searchFlights" layoutX="153.0" layoutY="344.0" mnemonicParsing="false" text="Search Flights" />
+      <Button fx:id="button_logout" layoutX="42.0" layoutY="76.0" mnemonicParsing="false" text="Logout" />
+      <Label fx:id="label_MyFlights" layoutX="248.0" layoutY="74.0" text="My Flights">
          <font>
             <Font size="24.0" />
          </font>
       </Label>
-      <TableView layoutX="75.0" layoutY="85.0" prefHeight="204.0" prefWidth="428.0">
+      <TableView layoutX="70.0" layoutY="123.0" prefHeight="204.0" prefWidth="428.0">
         <columns>
           <TableColumn prefWidth="75.0" text="C1" />
           <TableColumn prefWidth="75.0" text="C2" />
         </columns>
       </TableView>
-      <Button layoutX="377.0" layoutY="318.0" mnemonicParsing="false" text="Cancel Flight" />
+      <Button fx:id="button_cancelFlight" layoutX="377.0" layoutY="344.0" mnemonicParsing="false" text="Cancel Flight" />
+      <Label fx:id="label_welcome" layoutX="236.0" layoutY="24.0" text="Welcome!">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

@@ -25,8 +25,9 @@ public class Flights {
 		
 		try {
 			Connection con = getConnection();
-			//PreparedStatement create = con.prepareStatement("Create table Flights(flightID varchar(5), FromCity varchar(50), FlightDate DATE, ToCity varchar(50), numPass varchar(10))");
-			PreparedStatement create = con.prepareStatement("insert into Flights(flightID, FromCity, FlightDate, ToCity, numPass) values ('1002','NYC','12-02-2022','ATL','20')");
+			PreparedStatement create = con.prepareStatement("Create table Flights(flightID varchar(5) PRIMARY KEY , FromCity varchar(50), FlightDate DATE, ToCity varchar(50), numPass varchar(10))");
+			//PreparedStatement create = con.prepareStatement("insert into Flights(flightID, FromCity, FlightDate, ToCity, numPass) values ('1002','NYC','12-02-2022','ATL','20')");
+			//PreparedStatement create = con.prepareStatement("Drop table Flights");
 			create.executeUpdate();
 			
 		}catch(Exception e) {System.out.println(e);}
