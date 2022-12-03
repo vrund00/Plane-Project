@@ -15,7 +15,7 @@ public class Controller {
 	Button cancelButton;
 	
 	
-	@FXML
+	
 	public void cancelButton() throws Exception{
 		Parent root = FXMLLoader.load(getClass().getResource("LoginScene.fxml"));
 		Stage window = (Stage)cancelButton.getScene().getWindow();
