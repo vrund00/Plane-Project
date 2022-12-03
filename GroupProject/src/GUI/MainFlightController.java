@@ -16,6 +16,7 @@ public class MainFlightController {
 	Button searchButton;
 	
 	
+	
 	public void logout() throws Exception{
 		Parent root = FXMLLoader.load(getClass().getResource("LoginScene.fxml"));
 		Stage window = (Stage)logout.getScene().getWindow();

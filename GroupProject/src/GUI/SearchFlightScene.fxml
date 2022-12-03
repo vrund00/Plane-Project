@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.searchFlightController">
    <children>
       <Label layoutX="174.0" layoutY="32.0" text="Availiable Flights">
          <font>
@@ -28,5 +27,6 @@
         </columns>
       </TableView>
       <Button layoutX="273.0" layoutY="422.0" mnemonicParsing="false" text="Book" />
+      <Button fx:id="mainMenu" layoutX="24.0" layoutY="20.0" mnemonicParsing="false" onAction="#menu" text="Main Menu" />
    </children>
 </AnchorPane>
