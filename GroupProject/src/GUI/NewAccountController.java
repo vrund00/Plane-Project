@@ -8,12 +8,19 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
+import javafx.scene.control.ChoiceBox;
+//import javafx.event.ActionEvent;
 
 public class NewAccountController {
 	
 	@FXML
 	Button cancelButton;
 	
+    @FXML
+    ChoiceBox<?> adminDropDown;
+
+    @FXML
+    Button createNewUser;
 	
 	
 	public void cancelButton() throws Exception{
@@ -21,9 +28,16 @@ public class NewAccountController {
 		Stage window = (Stage)cancelButton.getScene().getWindow();
 		window.setScene(new Scene(root, 600, 600));
 	}
-		
-		
-		
+	
+	// need to add update sql database with info line not only go back to login
+	public void createNewUser() throws Exception{
+		Parent root = FXMLLoader.load(getClass().getResource("LoginScene.fxml"));
+		Stage window = (Stage)createNewUser.getScene().getWindow();
+		window.setScene(new Scene(root, 600, 600));
+	
 	}
+		
+		
+}
 
 
