@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="New User" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Controller">
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="New User" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.NewAccountController">
   <content>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
          <children>
@@ -42,7 +42,7 @@
                                     <TextField prefHeight="5.0" prefWidth="146.0" />
                                     <TextField prefHeight="5.0" prefWidth="146.0" />
                                     <TextField prefHeight="5.0" prefWidth="146.0" />
-                                    <ChoiceBox prefWidth="150.0" />
+                                    <Label alignment="CENTER" prefHeight="23.0" prefWidth="147.0" text="What is your birth city?" />
                                     <TextField prefHeight="5.0" prefWidth="146.0" />
                                     <ChoiceBox prefWidth="150.0" />
                                  </children>
@@ -50,7 +50,7 @@
                            </children>
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="377.0" prefWidth="65.0" />
-                        <VBox prefHeight="377.0" prefWidth="146.0">
+                        <VBox prefHeight="318.0" prefWidth="114.0">
                            <children>
                               <Label prefHeight="25.0" prefWidth="138.0" text="Last Name: " />
                               <Label prefHeight="25.0" prefWidth="138.0" text="City: " />
@@ -73,7 +73,7 @@
                         <TextField />
                         <TextField />
                         <TextField />
-                        <ChoiceBox prefWidth="150.0" />
+                        <Label alignment="CENTER" prefHeight="23.0" prefWidth="184.0" text="Color of first or dream car?" />
                         <TextField />
                         <TextField />
                      </children>
