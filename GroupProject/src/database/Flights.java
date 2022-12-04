@@ -25,9 +25,10 @@ public class Flights {
 		
 		try {
 			Connection con = getConnection();
-			PreparedStatement create = con.prepareStatement("Create table Flights(flightID varchar(5) PRIMARY KEY , FromCity varchar(50), FlightDate DATE, ToCity varchar(50), numPass varchar(10))");
+			//UPDATE [dbo].[Flights] set FlightDate = '11/3/2022' WHERE FlightID=1004
+			//PreparedStatement create = con.prepareStatement("Create table Flights(flightID varchar(5) PRIMARY KEY , FromCity varchar(50), FlightDate DATE, ToCity varchar(50), numPass varchar(10))");
 			//PreparedStatement create = con.prepareStatement("insert into Flights(flightID, FromCity, FlightDate, ToCity, numPass) values ('1002','NYC','12-02-2022','ATL','20')");
-			//PreparedStatement create = con.prepareStatement("Drop table Flights");
+			PreparedStatement create = con.prepareStatement("ALTER TABLE Flights ADD FlightDate TEXT");
 			create.executeUpdate();
 			
 		}catch(Exception e) {System.out.println(e);}
