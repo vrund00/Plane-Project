@@ -19,8 +19,8 @@ public class UserInfo {
 		
 		try {
 			Connection con = getConnection();
-			//PreparedStatement create = con.prepareStatement(" create table UserTest(username varchar(30), password varchar(40))");
-			PreparedStatement create = con.prepareStatement("Create table UserInfo(firstName varchar(15), "
+			
+			/*	PreparedStatement create = con.prepareStatement("Create table UserInfo(firstName varchar(15), "
 					+ "																lastName varchar(15),"
 					+ "																street varchar(30), "
 					+ "																city char(15), "
@@ -36,6 +36,14 @@ public class UserInfo {
 					+ "																adminId char(5), "
 					+ "																primary key (ssn))");
 			create.executeUpdate();
+			*/
+			/*	PreparedStatement create2= con.prepareStatement("insert into UserInfo(firstName, lastName, street, city, state, zipcode,email, ssn, username, password, answer1, answer2, admin) "
+					+ "											values('Jen','Jones', '33 Gilmer Street', 'Atlanta', 'Georiga', '30303', 'jjones@gmail.com','123456789', 'jjones', 'Test2', 'Atlanta', 'blue', 'no')");
+			create2.executeUpdate();*/
+			
+			PreparedStatement create3= con.prepareStatement("insert into UserInfo(firstName, lastName, street, city, state, zipcode,email, ssn, username, password, answer1, answer2, admin,adminID) "
+					+ "											values('Ben','Alexandar', '24 Lake Forest Drive', 'Chicago', 'Illinois', '26859', 'balexandar@gmail.com','246801357', 'balexandar', 'Test3', 'Illinois', 'red', 'yes','12345')");
+			create3.executeUpdate();
 			
 		}catch(Exception e) {System.out.println(e);}
 		finally {System.out.println("Function completed");};
@@ -45,6 +53,9 @@ public class UserInfo {
 	public static void main(String[]args) throws Exception{
 		
 		createUser();
+		
 	}
 
 }
+
+

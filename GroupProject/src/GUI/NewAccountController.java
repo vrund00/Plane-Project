@@ -17,9 +17,6 @@ public class NewAccountController {
 	Button cancelButton;
 	
     @FXML
-    ChoiceBox<?> adminDropDown;
-
-    @FXML
     Button createNewUser;
 	
 	
