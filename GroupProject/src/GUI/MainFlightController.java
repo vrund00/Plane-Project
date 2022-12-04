@@ -17,6 +17,8 @@ public class MainFlightController {
 	
 	
 	
+	
+	
 	public void logout() throws Exception{
 		Parent root = FXMLLoader.load(getClass().getResource("LoginScene.fxml"));
 		Stage window = (Stage)logout.getScene().getWindow();
@@ -26,6 +28,10 @@ public class MainFlightController {
 		Parent root = FXMLLoader.load(getClass().getResource("SearchFlightScene.fxml"));
 		Stage window = (Stage)logout.getScene().getWindow();
 		window.setScene(new Scene(root, 600, 600));
+	}
+	
+	public void cancel() throws Exception {
+		
 	}
 
 }

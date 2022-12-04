@@ -9,7 +9,7 @@
 
 <AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LoginController">
    <children>
-      <Button fx:id="loginButton" layoutX="127.0" layoutY="144.0" mnemonicParsing="false" onAction="#login" text="Login" />
+      <Button fx:id="loginButton" layoutX="127.0" layoutY="144.0" mnemonicParsing="false" onAction="#validateLogin" text="Login" />
       <TextField fx:id="usernameID" layoutX="59.0" layoutY="61.0" promptText="Username">
          <font>
             <Font size="15.0" />
@@ -20,12 +20,8 @@
             <Font size="15.0" />
          </font>
       </PasswordField>
-      <Label fx:id="statusID" layoutX="135.0" layoutY="28.0" text="Status" textFill="#c61111">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
       <Button fx:id="forgotPass" layoutX="96.0" layoutY="182.0" mnemonicParsing="false" text="Forgot Password" />
       <Button fx:id="newUser" layoutX="115.0" layoutY="226.0" mnemonicParsing="false" onAction="#newUser" text="New User" />
+      <Label fx:id="status" layoutX="127.0" layoutY="35.0" text="Label" />
    </children>
 </AnchorPane>
