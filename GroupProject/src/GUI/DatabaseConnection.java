@@ -49,6 +49,23 @@ public class DatabaseConnection {
 	
 	public static String username = "";
 	
+	/*public static ObservableList<UserFlightData> getUserFlights() {
+		
+		DatabaseConnection connectNow = new DatabaseConnection();
+		Connection connectionDB = connectNow.getConnection();
+		
+		String table = DatabaseConnection.username;
+		
+		ObservableList<UserFlightData> list = FXCollections.observableArrayList();
+		try {
+			PreparedStatement ps = connectionDB.prepareStatement("SELECT * from " + table);
+			ResultSet rs = ps.executeQuery();
+			
+			
+			
+		}catch (Exception e) { e.printStackTrace();}
+		
+	}*/
 	
 		
 		

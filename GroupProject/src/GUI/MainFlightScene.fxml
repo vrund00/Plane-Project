@@ -13,13 +13,13 @@
       <Button fx:id="logout" layoutX="38.0" layoutY="36.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
       <Button layoutX="445.0" layoutY="427.0" mnemonicParsing="false" text="Cancel Flight" />
       <Button fx:id="searchButton" layoutX="94.0" layoutY="427.0" mnemonicParsing="false" onAction="#search" text="Search Flights" />
-      <TableView layoutX="112.0" layoutY="154.0" prefHeight="211.0" prefWidth="377.0">
+      <TableView fx:id="myFlights_Table" layoutX="112.0" layoutY="154.0" prefHeight="211.0" prefWidth="377.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="FlightID" />
-          <TableColumn prefWidth="75.0" text="FromCity" />
-            <TableColumn prefWidth="82.0" text="FlightDate" />
-            <TableColumn minWidth="0.0" prefWidth="68.0" text="ToCity" />
-            <TableColumn prefWidth="75.0" text="Passengers " />
+          <TableColumn fx:id="flightID_Col" prefWidth="75.0" text="FlightID" />
+          <TableColumn fx:id="FromCity_Col" prefWidth="75.0" text="FromCity" />
+            <TableColumn fx:id="FlightDate_Col" prefWidth="82.0" text="FlightDate" />
+            <TableColumn fx:id="ToCity_Col" minWidth="0.0" prefWidth="68.0" text="ToCity" />
+            <TableColumn fx:id="Passengers_Col" prefWidth="75.0" text="Passengers " />
         </columns>
       </TableView>
       <Label fx:id="welcomeID" layoutX="236.0" layoutY="27.0" text="Welcome!">
