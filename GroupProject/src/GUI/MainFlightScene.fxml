@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainFlightController">
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainFlightController">
    <children>
       <Button fx:id="logout" layoutX="38.0" layoutY="36.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
       <Button layoutX="445.0" layoutY="427.0" mnemonicParsing="false" text="Cancel Flight" />

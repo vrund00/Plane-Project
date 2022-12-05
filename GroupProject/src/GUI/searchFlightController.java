@@ -114,7 +114,7 @@ public class searchFlightController implements Initializable {
 				
 	}
 	
-	public void bookFlight(String username) {
+	public void bookFlight() {
 		
 		
 		
