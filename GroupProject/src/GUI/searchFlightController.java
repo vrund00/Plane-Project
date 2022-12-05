@@ -114,9 +114,11 @@ public class searchFlightController implements Initializable {
 				
 	}
 	
-	public void bookFlight(String username) {
-		
-		
+	public String getUsername(String username) {
+		return username;
+	}
+	
+	public void bookFlight() {
 		
 		DatabaseConnection connectNow = new DatabaseConnection();
 		Connection connectionDB = connectNow.getConnection();
@@ -134,9 +136,7 @@ public class searchFlightController implements Initializable {
 				if (rs.getInt(1) == 1) {
 					bookSuccess.setText("Flight Booked");
 					
-					PreparedStatement ps1 = connectionDB.prepareStatement("INSERT INTO'" + username + "' SELECT * FROM [dbo].[Flights] WHERE flightID ='" + bookBox.getText() + "'" );
-					
-					
+					//PreparedStatement ps1 = connectionDB.prepareStatement("INSERT INTO'" + username + "' SELECT * FROM [dbo].[Flights] WHERE flightID ='" + bookBox.getText() + "'" );
 				}
 				
 				else {
