@@ -19,6 +19,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Window;
 public class PasswordRecoveryController extends Application
 {
+	//
 	public static void main(String[] args) 
     {
 		Application.launch(args);
@@ -26,7 +27,7 @@ public class PasswordRecoveryController extends Application
 	{
         {
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = @"jdbc:sqlserver://flightapp.database.windows.net:1433;database=CIS Application Project;user=vrund00@flightapp;password={Nehalp1974*};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;\";\r\n" ";Integrated Security=True;User Instance=True";
+            con.ConnectionString = "jdbc:sqlserver://flightapp.database.windows.net:1433;database=CIS Application Project;user=vrund00@flightapp;password={Nehalp1974*};encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;\";\r\n" ";Integrated Security=True;User Instance=True";
             string q = ("select SEC_QUESTION,ANSWER from Table1 where USERNAME='" + textBox1.Text + "'");
             con.Open();
             SqlCommand cmd = new SqlCommand(q, con);
