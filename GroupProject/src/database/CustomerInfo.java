@@ -21,8 +21,8 @@ public static void creatCustomer() throws Exception {
 	
 	try {
 		Connection con = getConnection();
-		//PreparedStatement create = con.prepareStatement(" create table UserTest(username varchar(30), password varchar(40))");
-		PreparedStatement create = con.prepareStatement("insert UserTest(username, password) values ('Vrund', 'pass')");
+		PreparedStatement create = con.prepareStatement(" create table UserTest(username varchar(30), password varchar(40))");
+		//PreparedStatement create = con.prepareStatement("insert UserTest(username, password) values ('Vrund', 'pass')");
 		create.executeUpdate();
 		
 	}catch(Exception e) {System.out.println(e);}

@@ -1,0 +1,11 @@
+--module-path
+/Users/vrundpatel/Desktop/javafx-sdk-19/lib
+--add-modules
+javafx.controls,javafx.fxml
+-Dfile.encoding=UTF-8
+-p
+"/Users/vrundpatel/.p2/pool/plugins/org.eclipse.fx.ide.css.jfx8_3.8.0.202204150904.jar:/Users/vrundpatel/Desktop/javafx-sdk-19/lib/javafx-swt.jar:/Users/vrundpatel/Desktop/javafx-sdk-19/lib/javafx.base.jar:/Users/vrundpatel/Desktop/javafx-sdk-19/lib/javafx.controls.jar:/Users/vrundpatel/Desktop/javafx-sdk-19/lib/javafx.fxml.jar:/Users/vrundpatel/Desktop/javafx-sdk-19/lib/javafx.graphics.jar:/Users/vrundpatel/Desktop/javafx-sdk-19/lib/javafx.media.jar:/Users/vrundpatel/Desktop/javafx-sdk-19/lib/javafx.swing.jar:/Users/vrundpatel/Desktop/javafx-sdk-19/lib/javafx.web.jar:/Users/vrundpatel/Desktop/School Work/mssql-jdbc-9.2.0.jre8 copy.jar"
+-classpath
+/Users/vrundpatel/git/Plane-Project/GroupProject/bin
+-XX:+ShowCodeDetailsInExceptionMessages
+GUI.Main

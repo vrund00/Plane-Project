@@ -74,7 +74,7 @@ public static Connection getConnection() throws SQLException{
 		DatabaseConnection connectNow = new DatabaseConnection();
 		Connection connectionDB = connectNow.getConnection();
 		
-		String verifyLogin = ("SELECT count(1) from [dbo].[UserTest] where username ='" + usernameID.getText() + "' AND password = '" + passwordID.getText() + "'");
+		String verifyLogin = ("SELECT count(1) from [dbo].[UserInfo] where username ='" + usernameID.getText() + "' AND password = '" + passwordID.getText() + "'");
 		try {
 			Statement statement = connectionDB.createStatement();
 			ResultSet queryResult = statement.executeQuery(verifyLogin);
