@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LoginController">
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.LoginController">
    <children>
       <Button fx:id="loginButton" layoutX="127.0" layoutY="144.0" mnemonicParsing="false" onAction="#validateLogin" text="Login" />
       <TextField fx:id="usernameID" layoutX="59.0" layoutY="61.0" promptText="Username">
@@ -20,7 +20,7 @@
             <Font size="15.0" />
          </font>
       </PasswordField>
-      <Button fx:id="forgotPass" layoutX="96.0" layoutY="182.0" mnemonicParsing="false" text="Forgot Password" />
+      <Button fx:id="forgotPassB" layoutX="96.0" layoutY="182.0" mnemonicParsing="false" onAction="#forgot" text="Forgot Password" />
       <Button fx:id="newUser" layoutX="115.0" layoutY="226.0" mnemonicParsing="false" onAction="#newUser" text="New User" />
       <Label fx:id="status" layoutX="127.0" layoutY="35.0" text="Label" />
    </children>

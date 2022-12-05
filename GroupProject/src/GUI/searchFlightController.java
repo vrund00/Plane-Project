@@ -19,6 +19,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -58,6 +59,17 @@ public class searchFlightController implements Initializable {
 	
 	@FXML 
 	Button book;
+	
+	@FXML 
+	Button bookButton;
+	
+	@FXML
+	
+	TextField bookBox;
+	
+	@FXML 
+	Label bookSuccess;
+	
 	
 	@FXML
 	private TableView <FlightData> flightsTable;
@@ -101,6 +113,43 @@ public class searchFlightController implements Initializable {
 		flightsTable.setItems(listM); 
 				
 	}
+	
+	public void bookFlight(String username) {
+		
+		
+		
+		DatabaseConnection connectNow = new DatabaseConnection();
+		Connection connectionDB = connectNow.getConnection();
+		
+		
+		
+		String sql1 = ("SELECT FROM [dbo].[Flights] WHERE flightID = '" + bookBox.getText() + "'");
+		String sql2 = ("SELECT count(1) FROM [dbo].[Flights] WHERE flightID ='" + bookBox.getText() + "'" );
+		try {
+			
+			PreparedStatement ps = connectionDB.prepareStatement(sql2);
+			ResultSet rs = ps.executeQuery();
+			
+			while (rs.next()) {
+				if (rs.getInt(1) == 1) {
+					bookSuccess.setText("Flight Booked");
+					
+					PreparedStatement ps1 = connectionDB.prepareStatement("INSERT INTO'" + username + "' SELECT * FROM [dbo].[Flights] WHERE flightID ='" + bookBox.getText() + "'" );
+					
+					
+				}
+				
+				else {
+					bookSuccess.setText("Error no flights found");
+				}
+			}
+			
+			
+		}catch (Exception e) {e.printStackTrace();}
+		
+	}
+	
+	
 }
 	
 

@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class MainFlightController {
@@ -14,6 +15,9 @@ public class MainFlightController {
 	
 	@FXML
 	Button searchButton;
+	
+	@FXML
+	Label welcomeID;
 	
 	
 	
@@ -31,6 +35,11 @@ public class MainFlightController {
 	}
 	
 	public void cancel() throws Exception {
+		
+	}
+	
+	public void displayName(String username) {
+		welcomeID.setText("Welcome" + username);
 		
 	}
 

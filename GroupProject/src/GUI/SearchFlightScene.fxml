@@ -27,12 +27,19 @@
             <TableColumn fx:id="numPass" prefWidth="75.0" text="numPass" />
         </columns>
       </TableView>
-      <Button fx:id="book" layoutX="273.0" layoutY="422.0" mnemonicParsing="false" text="Book" />
+      <Button fx:id="bookButton" layoutX="413.0" layoutY="425.0" mnemonicParsing="false" onAction="#bookFlight" text="Book" />
       <Button fx:id="mainMenu" layoutX="24.0" layoutY="20.0" mnemonicParsing="false" onAction="#menu" text="Main Menu" />
       <TextField fx:id="fromCityBox" layoutX="27.0" layoutY="96.0" promptText="From City" />
       <TextField fx:id="toCityBox" layoutX="427.0" layoutY="96.0" promptText="To City" />
       <Label layoutX="87.0" layoutY="69.0" text="From" />
       <Label layoutX="281.0" layoutY="69.0" text="Date" />
       <Label layoutX="492.0" layoutY="69.0" text="To" />
+      <TextField fx:id="bookBox" layoutX="220.0" layoutY="425.0" />
+      <Label layoutX="138.0" layoutY="429.0" text="FlightID:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="bookSuccess" layoutX="266.0" layoutY="458.0" text="Label" />
    </children>
 </AnchorPane>

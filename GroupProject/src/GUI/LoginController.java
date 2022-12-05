@@ -29,7 +29,7 @@ public class LoginController {
 	Button loginButton;
 	
 	@FXML
-	Button forgotPass;
+	Button forgotPassB;
 	
 	@FXML
 	Button newUser;
@@ -74,6 +74,9 @@ public static Connection getConnection() throws SQLException{
 		DatabaseConnection connectNow = new DatabaseConnection();
 		Connection connectionDB = connectNow.getConnection();
 		
+		
+		
+		
 		String verifyLogin = ("SELECT count(1) from [dbo].[UserInfo] where username ='" + usernameID.getText() + "' AND password = '" + passwordID.getText() + "'");
 		try {
 			Statement statement = connectionDB.createStatement();
@@ -83,8 +86,25 @@ public static Connection getConnection() throws SQLException{
 			while (queryResult.next()) {
 				if (queryResult.getInt(1) == 1) {
 					Parent root = FXMLLoader.load(getClass().getResource("MainFlightScene.fxml"));
+					
 					Stage window = (Stage)loginButton.getScene().getWindow();
 					window.setScene(new Scene(root, 600, 600));
+					
+					String username = usernameID.getText();
+					FXMLLoader loader = new FXMLLoader(getClass().getResource("MainFlightScene.fxml"));
+					root = loader.load();
+					MainFlightController scene2 = loader.getController();
+					scene2.displayName(username);
+					
+					//Parent root2 = FXMLLoader.load(getClass().getResource("searchFlightScene.fxml"));
+					//FXMLLoader loader2 = new FXMLLoader(getClass().getResource("searchFlightController.fxml"));
+					//root2 = loader2.load();
+					//searchFlightController name = loader2.getController();
+					//name.bookFlight(username);
+					
+					
+					
+					
 					
 				}
 				else {
@@ -96,6 +116,12 @@ public static Connection getConnection() throws SQLException{
 		}catch (Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public void forgot() throws Exception {
+		Parent root = FXMLLoader.load(getClass().getResource("PasswordRecoveryScene.fxml"));
+		Stage window = (Stage)forgotPassB.getScene().getWindow();
+		window.setScene(new Scene(root, 400, 450));
 	}
 	
 	
