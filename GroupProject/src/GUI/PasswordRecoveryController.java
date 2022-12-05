@@ -19,7 +19,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Window;
 public class PasswordRecoveryController extends Application
 {
-	//
+	// //
 	public static void main(String[] args) 
     {
 		Application.launch(args);
