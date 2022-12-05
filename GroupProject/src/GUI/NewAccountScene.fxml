@@ -84,8 +84,9 @@
                <bottom>
                   <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                     <buttons>
+                        <Label fx:id="status" prefHeight="18.0" prefWidth="231.0" />
                       <Button fx:id="createNewUser" mnemonicParsing="false" onAction="#insertUserInfo" text="Create New User" />
-                        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButton" text="Cancel" />
+                        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButton" text="Exit" />
                     </buttons>
                   </ButtonBar>
                </bottom>

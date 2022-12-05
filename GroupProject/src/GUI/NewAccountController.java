@@ -13,6 +13,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 //import javafx.event.ActionEvent;
 
@@ -65,6 +66,9 @@ public class NewAccountController {
 
     @FXML
     private TextField zipcodeTF;
+    
+    @FXML
+    private Label status;
 	
 public static Connection getConnection() throws SQLException{
 		
@@ -113,10 +117,20 @@ public static Connection getConnection() throws SQLException{
 			ps.setString(14, adminIDTF.getText());
 			ps.executeUpdate();
 			
-			
+			String username = usernameTF.getText();
+			PreparedStatement create = con.prepareStatement("CREATE TABLE " + username  +" (ssn char(9), flightID varchar(5), "
+					+ "																FromCity varchar(10),"
+					+ "																FlightDate varchar(10), "
+					+ "																ToCity varchar(10), "
+					+ "																numPass varchar(30), "
+					+ "																primary key (ssn, flightID))");
+			 
+			create.executeUpdate();
 			
 		}catch(Exception e) {System.out.println(e);}
 		finally {System.out.println("Function completed");};
+		
+		status.setText("New User Created -> Exit to login");
 	}
 	
 	

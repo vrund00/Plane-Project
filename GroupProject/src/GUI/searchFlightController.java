@@ -114,11 +114,17 @@ public class searchFlightController implements Initializable {
 				
 	}
 	
+<<<<<<< HEAD
 	public String getUsername(String username) {
 		return username;
 	}
 	
 	public void bookFlight() {
+=======
+	public void bookFlight() {
+		
+		
+>>>>>>> branch 'master' of https://github.com/vrund00/Plane-Project
 		
 		DatabaseConnection connectNow = new DatabaseConnection();
 		Connection connectionDB = connectNow.getConnection();
