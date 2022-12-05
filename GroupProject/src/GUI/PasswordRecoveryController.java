@@ -9,6 +9,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import java.sql.SQLException;
 
+<<<<<<< HEAD
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
@@ -92,6 +93,11 @@ public class PasswordRecoveryController extends Application
                         alert.setContentText("Invalid Npwd");
                         alert.show();
                     }
+=======
+public class PasswordRecoveryController {
+	
+	
+>>>>>>> branch 'master' of https://github.com/vrund00/Plane-Project
 
                 }
             }
