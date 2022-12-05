@@ -45,12 +45,12 @@ public static Connection getConnection() throws SQLException{
 	
 	public void handlebtnEnter() throws Exception{
 		Parent root = FXMLLoader.load(getClass().getResource("MainFlightScene.fxml"));
-		Stage window = (Stage)handlebtnEnter.getScene().getWindow();
+		Stage window = (Stage)btnEnter.getScene().getWindow();
 		window.setScene(new Scene(root, 600, 600));
 	}
 	public void handlebtnCancel() throws Exception{
 		Parent root = FXMLLoader.load(getClass().getResource("LoginScene.fxml"));
-		Stage window = (Stage)handlebtnCancel.getScene().getWindow();
+		Stage window = (Stage)btnCancel.getScene().getWindow();
 		window.setScene(new Scene(root, 600, 600));
 	}
 	
