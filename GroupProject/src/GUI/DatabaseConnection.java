@@ -21,6 +21,8 @@ public class DatabaseConnection {
 			e.printStackTrace();
 		}
 		return databaseLink;
+		//another
+		
 	}
 	
 	public static ObservableList<FlightData> getDataFlights() {
