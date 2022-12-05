@@ -96,16 +96,8 @@ public static Connection getConnection() throws SQLException{
 					MainFlightController scene2 = loader.getController();
 					scene2.displayName(username);
 					
-					//Parent root2 = FXMLLoader.load(getClass().getResource("searchFlightScene.fxml"));
-					//FXMLLoader loader2 = new FXMLLoader(getClass().getResource("searchFlightController.fxml"));
-					//root2 = loader2.load();
-					//searchFlightController name = loader2.getController();
-					//name.bookFlight(username);
-					
-					
-					
-					
-					
+					DatabaseConnection.username = usernameID.getText();
+
 				}
 				else {
 					status.setText("Login incorrect, try again!");

@@ -114,7 +114,12 @@ public class searchFlightController implements Initializable {
 				
 	}
 	
-	public void bookFlight(String username) {
+	public String getUsername(String username) {
+		return username;
+	}
+	
+
+	public void bookFlight() {
 		
 		
 		
@@ -123,19 +128,20 @@ public class searchFlightController implements Initializable {
 		
 		
 		
-		String sql1 = ("SELECT FROM [dbo].[Flights] WHERE flightID = '" + bookBox.getText() + "'");
 		String sql2 = ("SELECT count(1) FROM [dbo].[Flights] WHERE flightID ='" + bookBox.getText() + "'" );
 		try {
 			
 			PreparedStatement ps = connectionDB.prepareStatement(sql2);
 			ResultSet rs = ps.executeQuery();
 			
+			String user = DatabaseConnection.username;
+			
 			while (rs.next()) {
 				if (rs.getInt(1) == 1) {
 					bookSuccess.setText("Flight Booked");
 					
-					PreparedStatement ps1 = connectionDB.prepareStatement("INSERT INTO'" + username + "' SELECT * FROM [dbo].[Flights] WHERE flightID ='" + bookBox.getText() + "'" );
-					
+					PreparedStatement ps1 = connectionDB.prepareStatement("INSERT INTO " + user + " SELECT * FROM [dbo].[Flights] WHERE flightID ='" + bookBox.getText() + "'" );
+					ps1.execute();
 					
 				}
 				

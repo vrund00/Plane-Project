@@ -11,12 +11,21 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
 	<classpathentry kind="lib" path="C:/Users/dmarcus/Downloads/mssql-jdbc-9.2.0.jre8 copy.jar">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jAVAFXLIB">
+=======
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFx">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Jzash/OneDrive/Desktop/CIS 3270/mssql-jdbc-9.2.0.jre8 copy.jar">
+>>>>>>> branch 'master' of https://github.com/vrund00/Plane-Project
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>

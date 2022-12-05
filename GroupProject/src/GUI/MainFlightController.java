@@ -1,23 +1,49 @@
 package GUI;
 
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 
 public class MainFlightController {
 	
 	@FXML
-	Button logout;
+    private TableColumn<?, ?> FlightDate_Col;
+
+    @FXML
+    private TableColumn<?, ?> FromCity_Col;
+
+    @FXML
+    private TableColumn<?, ?> Passengers_Col;
+
+    @FXML
+    private TableColumn<?, ?> ToCity_Col;
+
+    @FXML
+    private TableColumn<?, ?> flightID_Col;
+
+    @FXML
+    private Button logout;
+
+    @FXML
+    private TableView<UserFlightData> myFlights_Table;
+
+    @FXML
+    private Button searchButton;
+
+    @FXML
+    private Label welcomeID;
+    
+    ObservableList<UserFlightData> listU;
+
 	
-	@FXML
-	Button searchButton;
 	
-	@FXML
-	Label welcomeID;
 	
 	
 	
