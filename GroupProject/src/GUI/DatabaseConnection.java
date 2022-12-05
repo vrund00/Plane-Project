@@ -47,6 +47,9 @@ public class DatabaseConnection {
 	}
 	
 	
+	public static String username = "";
+	
+	
 		
 		
 
