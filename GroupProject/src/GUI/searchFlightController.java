@@ -134,7 +134,7 @@ public class searchFlightController implements Initializable {
 			PreparedStatement ps = connectionDB.prepareStatement(sql2);
 			ResultSet rs = ps.executeQuery();
 			
-			String user = DatabaseConnection.username;
+			String user = storeData.username;
 			
 			while (rs.next()) {
 				if (rs.getInt(1) == 1) {

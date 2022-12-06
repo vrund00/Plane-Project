@@ -8,10 +8,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainFlightController">
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.MainFlightController">
    <children>
       <Button fx:id="logout" layoutX="38.0" layoutY="36.0" mnemonicParsing="false" onAction="#logout" text="Logout" />
-      <Button layoutX="445.0" layoutY="427.0" mnemonicParsing="false" text="Cancel Flight" />
+      <Button layoutX="445.0" layoutY="427.0" mnemonicParsing="false" onAction="#cancelFlight" text="Cancel Flight" />
       <Button fx:id="searchButton" layoutX="94.0" layoutY="427.0" mnemonicParsing="false" onAction="#search" text="Search Flights" />
       <TableView fx:id="myFlights_Table" layoutX="112.0" layoutY="154.0" prefHeight="211.0" prefWidth="377.0">
         <columns>
@@ -32,6 +32,7 @@
             <Font size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="281.0" layoutY="427.0" promptText="FlightID" />
+      <TextField fx:id="flightID_Box" layoutX="281.0" layoutY="427.0" promptText="FlightID" />
+      <Label fx:id="cancel_label" layoutX="337.0" layoutY="461.0" />
    </children>
 </AnchorPane>

@@ -66,10 +66,9 @@ public static Connection getConnection() throws SQLException{
 	public void login2() throws Exception{
 		
 		status.setText("it works");
-		
-		
 	
 }
+	
 	public void validateLogin () {
 		DatabaseConnection connectNow = new DatabaseConnection();
 		Connection connectionDB = connectNow.getConnection();
@@ -84,20 +83,14 @@ public static Connection getConnection() throws SQLException{
 			
 			
 			while (queryResult.next()) {
+				storeData.username = usernameID.getText();
+
 				if (queryResult.getInt(1) == 1) {
 					Parent root = FXMLLoader.load(getClass().getResource("MainFlightScene.fxml"));
 					
 					Stage window = (Stage)loginButton.getScene().getWindow();
 					window.setScene(new Scene(root, 600, 600));
-					
-					String username = usernameID.getText();
-					FXMLLoader loader = new FXMLLoader(getClass().getResource("MainFlightScene.fxml"));
-					root = loader.load();
-					MainFlightController scene2 = loader.getController();
-					scene2.displayName(username);
-					
-					DatabaseConnection.username = usernameID.getText();
-
+										
 				}
 				else {
 					status.setText("Login incorrect, try again!");

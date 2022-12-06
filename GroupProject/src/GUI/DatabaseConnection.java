@@ -49,23 +49,26 @@ public class DatabaseConnection {
 	
 	public static String username = "";
 	
-	/*public static ObservableList<UserFlightData> getUserFlights() {
+	public static ObservableList<UserFlightData> getUserFlights() {
 		
 		DatabaseConnection connectNow = new DatabaseConnection();
 		Connection connectionDB = connectNow.getConnection();
 		
-		String table = DatabaseConnection.username;
+		String user = storeData.username;
 		
 		ObservableList<UserFlightData> list = FXCollections.observableArrayList();
 		try {
-			PreparedStatement ps = connectionDB.prepareStatement("SELECT * from " + table);
+			PreparedStatement ps = connectionDB.prepareStatement("SELECT * FROM " + user);
 			ResultSet rs = ps.executeQuery();
 			
-			
+			while (rs.next()) {
+				list.add(new UserFlightData((rs.getInt("flightID")), rs.getString("FromCity"), rs.getString("FlightDate"), rs.getString("ToCity"), rs.getInt("numPass")));
+			}
 			
 		}catch (Exception e) { e.printStackTrace();}
+		return list;
 		
-	}*/
+	}
 	
 		
 		

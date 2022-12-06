@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.searchFlightController">
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.searchFlightController">
    <children>
       <Label layoutX="174.0" layoutY="11.0" text="Availiable Flights">
          <font>
@@ -40,6 +40,6 @@
             <Font size="15.0" />
          </font>
       </Label>
-      <Label fx:id="bookSuccess" layoutX="266.0" layoutY="458.0" text="Label" />
+      <Label fx:id="bookSuccess" layoutX="266.0" layoutY="458.0" />
    </children>
 </AnchorPane>
